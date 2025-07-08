@@ -1,0 +1,144 @@
+.recipe-grid{
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  justify-content: space-between;
+
+}
+
+@media (max-width: 2000px) {
+  .recipe-grid {
+    grid-template-columns: repeat(7, 1fr);
+  }
+}
+
+@media (max-width: 1900px) {
+  .recipe-grid {
+    grid-template-columns: repeat(6, 1fr);
+  }
+}
+
+@media (max-width: 1500px) {
+  .recipe-grid {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
+
+@media (max-width: 1150px) {
+  .recipe-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (max-width: 1000px) {
+  .recipe-grid {
+    grid-template-columns: repeat(3, 1fr);
+  
+  }
+}
+@media (max-width: 700px) {
+  .recipe-grid {
+    grid-template-columns: repeat(2,1fr);
+  }
+}
+
+@media (max-width: 450px) {
+  .recipe-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+.recipe-container{
+  padding-top: 40px;
+  padding-bottom: 25px;
+  padding-left: 25px;
+  padding-right: 25px;
+  margin-top:20px;
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-color: #795548;
+  border-width: 3px;
+  border-style:solid;
+  border-radius: 20px;
+  transition: transform 0.3s ease-in, box-shadow 0.3s ease-in;
+}
+
+
+.recipe-image{
+  width:100%;
+  max-height: 100%;
+}
+
+.recipe-container{
+  width: 170px;
+}
+.recipe-button{
+  border:none;
+  padding:10px;
+  border-radius:20px;
+  margin-top: 20px;
+  width: 100%;
+  padding: 8px;
+  border-radius: 50px;
+
+}
+
+.recipe-name{
+  padding-top:10px;
+  font-size:15px;
+  font-weight: bold;
+  text-align: center;
+  color:#d35400;
+  height:60px;
+  border-bottom: 2px solid #ffa726;;
+}
+.cuisine-badge {
+  display: inline-block;
+  background-color: #ff9800;
+  color: white;
+  padding: 4px 12px;
+  border-radius: 12px;
+  font-size: 0.9em;
+  font-weight: bold;
+  margin: 10px 0;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.15);
+}
+
+.recipe-container:hover{
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.cooking-time{
+  margin-top:15px;
+  padding:5px;
+  border-width: 2px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.filter-panel {
+  display: flex;
+  gap: 10px;
+  margin: 20px;
+  align-items: center;
+  background-color:#F5E1C8 ;
+  padding: 20px;
+  margin-left: -5px;
+  margin-right: -5px;
+
+}
+.filter-panel select {
+  padding: 5px;
+  font-size: 16px;
+  border-radius: 20px;
+}
+.filter-panel button {
+  padding: 5px 15px;
+  font-size: 16px;
+  cursor: pointer;
+  border:none;
+  color: #333;
+  border-radius: 20px;
+}
