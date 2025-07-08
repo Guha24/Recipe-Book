@@ -125,7 +125,7 @@ function setupRedirectSearch() {
   function redirect() {
     const query = input.value.trim();
     if (query !== '') {
-      window.location.href = `main.html?query=${encodeURIComponent(query)}`;
+      window.location.href = `index.html?query=${encodeURIComponent(query)}`;
     }
   }
 
